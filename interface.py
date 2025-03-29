@@ -7,7 +7,7 @@ def generate_password_gradio(length):
 
 def create_interface():
     iface = gr.Interface(fn=generate_password_gradio,
-                         inputs=gr.Slider(minimum=8, maximum=64, step=1, label="Şifre Uzunluğu"),
+                         inputs=gr.Slider(minimum=8, maximum=64, step=1, label="Password Lenght"),
                          outputs="text",
                          live=True)
     return iface
