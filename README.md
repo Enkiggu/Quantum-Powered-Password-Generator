@@ -51,3 +51,22 @@ Ciphers have a wide character range, including letters, numbers and special char
 ### Install Dependencies:
 ```bash
 pip install qiskit gradio flask
+```
+
+## How to Use :rocket:
+
+### 1. Using the API:
+You can generate a random password by sending a GET request to the following URL:
+
+```bash
+http://127.0.0.1:5000/generate_password?length=15
+```
+
+In the example above, the password length is set to 15. You can adjust the length by modifying the value of `length`.
+
+### 2. Using the Gradio Interface:
+Alternatively, you can generate passwords through the Gradio interface. Below is a screenshot of the interface where you can input the desired password length and get your random password.
+
+![Gradio Interface](src/gradio.png)
+
+
